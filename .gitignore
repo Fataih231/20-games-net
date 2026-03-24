@@ -1,0 +1,6 @@
+node_modules/
+android/
+*.log
+apk_found.txt
+apk_path.txt
+cap_doctor.log
