@@ -1,0 +1,18 @@
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="yellow-glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="5" y="5" width="50" height="50" fill="#F0FF00" filter="url(#yellow-glow)">
+    <animate attributeName="x" values="5;7;3;5" dur="0.1s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="1;0.5;1;0" dur="0.2s" repeatCount="indefinite" />
+  </rect>
+  <rect x="10" y="10" width="10" height="10" fill="#FFFFFF" opacity="0.5">
+     <animate attributeName="x" values="10;20;5;10" dur="0.15s" repeatCount="indefinite" />
+  </rect>
+</svg>
